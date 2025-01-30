@@ -4,12 +4,12 @@ const docURL = 'https://docs.google.com/document/d/1CqCyzzLBP_DVZ_0JrZ3taXey1gxR
 
 const Page = () => {
     return (
-        <Box sx={{ width: '100%', height: '100vh', overflow: 'hidden' }}>
+        <Box sx={{ height: '100vh', display: 'flex' }}>
             <iframe 
                 src={docURL} 
                 width="100%"  
                 height="100%" 
-                style={{ border: 'none' }} 
+                style={{ border: 'none', flexGrow: 1 }} 
             />
         </Box>
     )
