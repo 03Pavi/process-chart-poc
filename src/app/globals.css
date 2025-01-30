@@ -16,11 +16,11 @@
 .markdown-content {
   max-width: 900px;
   width: 100%;
-  padding: 40px;
   border-radius: 8px;
   overflow-wrap: break-word;
   line-height: 1.6;
   font-family: 'Inter', sans-serif;
+  
 }
 
 .markdown-content h1, 
