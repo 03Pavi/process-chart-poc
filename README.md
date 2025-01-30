@@ -1,4 +1,4 @@
-### Simplified Process for Feature Development (HLD & LLD)
+# Simplified Process for Development
 
 This is the step-by-step process the team follows to build a new feature for a project. It covers both planning (HLD) and detailed design (LLD) stages, and focuses on working independently while still collaborating when necessary.
 
@@ -40,7 +40,7 @@ This is the step-by-step process the team follows to build a new feature for a p
 
 ---
 
-# Notification Feature (PoC)
+# Notification Feature
 
 ## 📌 High-Level Design (HLD)
 
@@ -115,7 +115,8 @@ interface Notification {
 ## 📌 Handling Team Collaboration & Absences
 
 - **If a developer is on leave**, another can continue based on the **LLD & Component Hierarchy**.
-- **Project Management Tools** like **JIRA, Notion, or Trello** can track progress.
+- **Project Management Tools** like **JIRA, ASANA, etc** can track progress.
+- **Communication Tools** like **SLACK** can communicate.
 - **Code Review**: Once development is complete, the team will review each other’s code to maintain **code quality**.
 
 ---
