@@ -1,8 +1,27 @@
-
-*{
-  background-color: #0f0f0f;
-  color: #c0c0c0;
+:root {
+  --background-color: #ffffff;
+  --text-color: #0f0f0f;
+  --heading-color: #000000;
+  --link-color: #007acc;
+  --blockquote-border: #ccc;
+  --table-border: #ddd;
 }
+
+[data-theme="dark"] {
+  --background-color: #0f0f0f;
+  --text-color: #c0c0c0;
+  --heading-color: #ffffff;
+  --link-color: #66b2ff;
+  --blockquote-border: #555;
+  --table-border: #444;
+}
+
+* {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  box-sizing: border-box;
+}
+
 .readme-container {
   display: flex;
   justify-content: center;
@@ -19,23 +38,22 @@
   border-radius: 8px;
   overflow-wrap: break-word;
   line-height: 1.6;
-  font-family: 'Inter', sans-serif;
-  
+  font-family: "Inter", sans-serif;
 }
 
-.markdown-content h1, 
-.markdown-content h2, 
-.markdown-content h3, 
-.markdown-content h4, 
-.markdown-content h5, 
+.markdown-content h1,
+.markdown-content h2,
+.markdown-content h3,
+.markdown-content h4,
+.markdown-content h5,
 .markdown-content h6 {
-  color: white;
+  color: var(--heading-color);
   margin-bottom: 15px;
 }
 
 .markdown-content h1 {
   font-size: 2.5rem;
-  border-bottom: 2px solid #eee;
+  border-bottom: 2px solid var(--blockquote-border);
   padding-bottom: 10px;
 }
 
@@ -62,7 +80,7 @@
   text-decoration: underline;
 }
 
-.markdown-content ul, 
+.markdown-content ul,
 .markdown-content ol {
   padding-left: 20px;
   margin-bottom: 15px;
@@ -100,10 +118,10 @@
   border-collapse: collapse;
 }
 
-.markdown-content th, 
+.markdown-content th,
 .markdown-content td {
   padding: 10px;
-  border: 1px solid #ddd;
+  border: 1px solid var(--heading-color);
 }
 
 .markdown-content ul li input[type="checkbox"] {

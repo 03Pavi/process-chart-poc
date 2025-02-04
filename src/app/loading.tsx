@@ -1,4 +1,4 @@
-import { Box, CircularProgress, Skeleton } from '@mui/material'
+import { Box, CircularProgress } from '@mui/material'
 
 const loading = () => {
     return (
