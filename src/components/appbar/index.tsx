@@ -9,6 +9,7 @@ import Typography from '@mui/material/Typography';
 import TextSnippetIcon from '@mui/icons-material/TextSnippet';
 import ArticleIcon from '@mui/icons-material/Article';
 import ThemeSelector from '../theme-selector';
+import { TopScrollBar } from "top-scroll-bar"
 
 export default function DrawerAppBar() {
   const router = useRouter();
@@ -40,6 +41,7 @@ export default function DrawerAppBar() {
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
       <AppBar component="nav" elevation={0}>
+        <TopScrollBar style={{ backgroundColor: "var(--text-color)",zIndex: 1,height:"4px !important"}} originFrom='left' />
         <Toolbar>
           <Typography
             sx={{ flexGrow: 1 }}

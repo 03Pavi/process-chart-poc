@@ -13,11 +13,13 @@
     "@emotion/styled": "^11.14.0",
     "@mui/icons-material": "^6.4.2",
     "@mui/material": "^6.4.2",
+    "framer-motion": "^12.3.1",
     "next": "15.1.6",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-markdown": "^9.0.3",
-    "remark-gfm": "^4.0.0"
+    "remark-gfm": "^4.0.0",
+    "top-scroll-bar": "^1.0.3"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
