@@ -35,13 +35,13 @@ export default function DrawerAppBar() {
         router.push("/doc")
       })
     }
-  }, [text, router])
+  }, [text, router,localStorage])
 
   return (
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
       <AppBar component="nav" elevation={0}>
-        <TopScrollBar style={{ backgroundColor: "var(--text-color)",zIndex: 1,height:"4px !important"}} originFrom='left' />
+        <TopScrollBar style={{ backgroundColor: "var(--text-color)", zIndex: 1, height: "4px !important" }} originFrom='left' />
         <Toolbar>
           <Typography
             sx={{ flexGrow: 1 }}

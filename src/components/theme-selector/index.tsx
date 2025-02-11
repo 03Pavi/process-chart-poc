@@ -11,6 +11,9 @@ const ThemeSelector = () => {
     const [theme, setTheme] = useState<Theme>(Theme.dark);
 
     useEffect(() => {
+        if(!localStorage.getItem('theme')) {
+            localStorage.setItem('theme', Theme.dark);
+        }
         const savedTheme = localStorage.getItem('theme') as Theme;
         if (savedTheme) {
             setTheme(savedTheme);
